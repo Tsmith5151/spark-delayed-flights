@@ -9,8 +9,7 @@
 </p>
 
 #### Software and Libraries
-- Python 2.7
-- NumPy
+- Python 2.7.11
 - matplotlib.pyplot 
 - iPython Notebook
 - Basemap 1.0.7
