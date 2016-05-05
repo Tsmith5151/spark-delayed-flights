@@ -21,21 +21,25 @@
 
 - To install Apache Spark, go ['here](http://spark.apache.org/downloads.html) and install the latest version (Spark 1.6.1)
 
-- Next, go to the home directory `(cd ~ )` and unzip the .tgz file.
+- Open a terminal and cd into the home directory `(cd ~ )` 
+- Unzip the .tgz file.
 ```tar -zxvf spark-1.6.1-bin-hadoop2.6.tgz```
 - If unzipped in Downloads folder, move to home directory
 ```mv spark-1.6.1-bin-hadoop2.6 /Users/name```
-- Go to `.bash_profile` and add the following alias:
+- Open `.bash_profile`
+```nano .bash_profile```
+- Add the following alias:
 ```
 export SPARK_PATH=~/spark-1.6.1-bin-hadoop2.6
 export PYSPARK_DRIVER_PYTHON = "jupyter"
 export PYSPARK_DRIVER_PYTHON_OPTS = "notebook"
 alias snotebook = '$SPARK_PATH/bin/pyspark --master local[2]'
 ```
+- Save and exit .bash_profile; Update by:
 ```source .bash_profile```
 
-- Note --master local[2] is referenced to the number of processors that assigned 
-- 
+- Note: --master local[2] is referenced to the number of processors that assigned 
+
 #### Exploring the Data:
 
 - The figure below displays the aiports with more than 70,000 flights recorded in the dataset in 2008. Airports with larger markers represent a higher magnitude of the total number of flights. Darker the marker fill, the higher the probabiity is for increased delayed times when departing from the respected airports. We can see from the geographical plot below that out of the queried airports in the United States, places like DFW, LAX, or ATL tend to have heavier delays and based on past experiences, our data is behaving as expected. As a note, viewing the code inside the `flights.ipynb` allows the user to zoom further, eliminating some of the overlap of airports observed belows, specifically on the East coast. 
