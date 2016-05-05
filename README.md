@@ -19,15 +19,21 @@
 
 - Apache Spark is an open source general engine for Big Data processing that is 100X faster than Hadoop MapReduce in memory or 10X faster when running on disk. It provides APIs in Python, Scala, R, and Java. The Spark Ecosystem consists of Spark SQL, Spark Streaming, MLib (machine learning), and GraphX. These libraries can be seamlessly combined in the same application. Spark can run on Hadoop, standalone, or in the cloud; it can also access data sources such as HDFS, Cassandra, and Hive. 
 
-- To install Apache Spark, go ['here](http://spark.apache.org/downloads.html) and install the latest version (Spark 1.6.1)
+- To install Apache Spark, go [here](http://spark.apache.org/downloads.html) and install the latest version (Spark 1.6.1)
 
 - Open a terminal and cd into the home directory `(cd ~ )` 
 - Unzip the .tgz file.
-```tar -zxvf spark-1.6.1-bin-hadoop2.6.tgz```
+```
+tar -zxvf spark-1.6.1-bin-hadoop2.6.tgz
+```
 - If unzipped in Downloads folder, move to home directory
-```mv spark-1.6.1-bin-hadoop2.6 /Users/name```
+```
+mv spark-1.6.1-bin-hadoop2.6 /Users/name
+```
 - Next open `.bash_profile`
-```nano .bash_profile```
+```
+nano .bash_profile
+```
 - Add the following alias:
 ```
 export SPARK_PATH=~/spark-1.6.1-bin-hadoop2.6
@@ -36,7 +42,9 @@ export PYSPARK_DRIVER_PYTHON_OPTS = "notebook"
 alias snotebook = '$SPARK_PATH/bin/pyspark --master local[2]'
 ```
 - Save and exit .bash_profile; Update by:
-```source .bash_profile```
+```
+source .bash_profile
+```
 
 - Note: --master local[2] is referenced to the number of processors that assigned 
 
