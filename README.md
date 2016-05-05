@@ -26,8 +26,8 @@
 ```tar -zxvf spark-1.6.1-bin-hadoop2.6.tgz```
 - If unzipped in Downloads folder, move to home directory
 ```mv spark-1.6.1-bin-hadoop2.6 /Users/name```
-- Open `.bash_profile`
-```nano .bash_profile```
+- Next open `.bash_profile`
+- ```nano .bash_profile```
 - Add the following alias:
 ```
 export SPARK_PATH=~/spark-1.6.1-bin-hadoop2.6
