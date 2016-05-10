@@ -1,5 +1,9 @@
 ## Delayed-Flights
 
+<p align = "center">
+<img src "http://proed.erau.edu/Assets/professional/images/airport-planning-design.jpg">
+</p>
+
 #### Overview
 - This workbook will explore flight [`data`](http://stat-computing.org/dataexpo/2009/the-data.html) and predict delayed flights at airports located throughout United States based on previous flight records. The dataset consists of information such as flight arrival and departure times. Additionally, the .dat file for plotting the geographical location of airports in the U.S. can be found [`here`](https://github.com/jpatokal/openflights/blob/master/data/airports.dat). Python 2.7.11  and the Jupyter Ipython Notebook is utilized to explore, analyze, and visualize the results. This dataset examines flights from 2008, which is roughly 7 million flights! We will worki in the Apache Spark Ecosystem for general data processing and analysis. The `.csv` file containing the flight data and the airport attributes are imported as separate tables in a local PostgresSQL database for querying. 
 
