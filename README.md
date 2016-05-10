@@ -1,7 +1,7 @@
 ## Delayed-Flights
 
 <p align = "center">
-<img src "http://proed.erau.edu/Assets/professional/images/airport-planning-design.jpg">
+<img src = "http://proed.erau.edu/Assets/professional/images/airport-planning-design.jpg">
 </p>
 
 #### Overview
